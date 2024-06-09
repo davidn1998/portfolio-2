@@ -1,0 +1,27 @@
+{
+	"name": "portfolio-2",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"build": "nuxt build",
+		"dev": "nuxt dev",
+		"generate": "nuxt generate",
+		"preview": "nuxt preview",
+		"postinstall": "nuxt prepare",
+		"prepare": "husky",
+		"precommit": "lint-staged --config .lintstagedrc.json",
+		"format": "lint-staged --config .lintstagedrcformat.json -v"
+	},
+	"dependencies": {
+		"@nuxt/eslint": "^0.3.13",
+		"@nuxtjs/tailwindcss": "^6.12.0",
+		"nuxt": "^3.11.2",
+		"prettier": "^3.2.5",
+		"vue": "^3.4.27",
+		"vue-router": "^4.3.2"
+	},
+	"devDependencies": {
+		"husky": "^9.0.11",
+		"lint-staged": "^15.2.5"
+	}
+}
