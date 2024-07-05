@@ -11,7 +11,7 @@ const route = useRoute();
 
 <template>
 	<li
-		class="dark:text-gray-300 dark:hover:text-gray-50 group relative transition-all duration-200">
+		class="dark:text-gray-300 dark:hover:text-gray-50 group relative transition-all duration-200 text-xs md:text-sm">
 		<NuxtLink
 			:to="link.path"
 			:target="link.label === 'resume' ? '_blank' : '_self'"

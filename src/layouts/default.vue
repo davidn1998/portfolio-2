@@ -6,16 +6,25 @@ onMounted(() => {
 		AOS.init();
 	});
 });
+
+const route = useRoute();
 </script>
 
 <template>
-	<div class="dark:bg-ink dark:text-white flex flex-col relative font-open">
-		<header class="fixed w-screen flex justify-between items-center p-8">
+	<div
+		class="dark:bg-ink dark:text-white flex flex-col relative font-open overflow-x-hidden">
+		<header
+			class="fixed w-screen flex justify-between items-center p-8 z-50 drop-shadow-md"
+			:class="
+				route.name === 'index'
+					? 'bg-transparent'
+					: 'bg-gray-100 dark:bg-black '
+			">
 			<NavBar />
 			<ThemeToggler />
 		</header>
 		<main
-			class="container mx-auto flex flex-col lg:max-w-5xl min-h-screen w-screen justify-center">
+			class="container mx-auto flex flex-col lg:max-w-5xl min-h-screen w-screen justify-center p-4">
 			<slot />
 		</main>
 	</div>
