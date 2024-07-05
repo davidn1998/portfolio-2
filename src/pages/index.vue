@@ -14,9 +14,13 @@ import workingDevAnim from '@/lotties/working-dev.json';
 			</client-only>
 			<div class="w-full p-10 md:w-[50%] md:p-16 md:text-2xl">
 				<h1
-					class="mb-4 text-4xl dark:text-white font-montserrat tracking-widest">
+					class="text-4xl dark:text-white font-montserrat tracking-widest">
 					David Nwachukwu
 				</h1>
+				<div class="h-0.5 bg-ink dark:bg-white my-4" />
+				<h2 class="font-montserrat tracking-widest uppercase text-sm">
+					Portfolio
+				</h2>
 			</div>
 		</div>
 		<div class="group mt-16 flex h-24 w-24 items-center justify-center">

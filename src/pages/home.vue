@@ -36,7 +36,8 @@ const setTab = (t: string) => {
 				</p>
 				<p class="font-light">
 					My main tech stack consists of Nuxt / Vue, TailwindCSS &
-					MongoDB 💻. I'm currently also learning IOS development 📱
+					MongoDB 💻. I've also recently ventured into IOS development
+					📱
 				</p>
 				<div id="socials" class="mt-5 flex w-24 justify-between">
 					<a
