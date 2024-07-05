@@ -15,28 +15,14 @@ const route = useRoute();
 
 <template>
 	<nav>
-		<Transition>
-			<ul
-				v-if="route.name != 'index'"
-				class="flex items-center justify-between gap-6 transition-all duration-200 font-montserrat tracking-widest">
-				<NavLink
-					v-for="link in navLinks"
-					:key="link.path"
-					:link="link" />
-			</ul>
-		</Transition>
+		<ul
+			v-if="route.name != 'index'"
+			data-aos="fade-right"
+			data-aos-duration="1000"
+			class="flex items-center justify-between gap-6 transition-all duration-200 font-montserrat tracking-widest">
+			<NavLink v-for="link in navLinks" :key="link.path" :link="link" />
+		</ul>
 	</nav>
 </template>
 
-<style lang="scss" scoped>
-.v-enter-active,
-.v-leave-active {
-	transition: all 0.5s;
-}
-
-.v-enter-from,
-.v-leave-to {
-	transform: translateX(-150%);
-	opacity: 0;
-}
-</style>
+<style lang="scss" scoped></style>

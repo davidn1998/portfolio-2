@@ -3,7 +3,10 @@ import workingDevAnim from '@/lotties/working-dev.json';
 </script>
 
 <template>
-	<div class="flex flex-col items-center justify-center p-4 mt-24">
+	<div
+		data-aos="fade-in"
+		data-aos-duration="1000"
+		class="flex flex-col items-center justify-center p-4 mt-24">
 		<div
 			class="flex w-full flex-col-reverse items-center justify-between rounded-2xl bg-gray-50 shadow-lg dark:bg-neutral-800 dark:shadow-neutral-800 md:flex-row">
 			<client-only>

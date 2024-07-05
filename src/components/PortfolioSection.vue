@@ -63,6 +63,7 @@ const projects = [
 				:key="index"
 				:data-aos="index % 2 === 0 ? 'fade-right' : 'fade-left'"
 				data-aos-duration="1000"
+				data-aos-offset="200"
 				:name="project.name"
 				:description="project.description"
 				:github-link="project.githubURL"

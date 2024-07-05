@@ -11,8 +11,10 @@ const setTab = (t: string) => {
 </script>
 
 <template>
-	<div class="flex flex-1 flex-col mt-32">
-		<Meta title="David Nwachukwu" />
+	<div
+		data-aos="fade-in"
+		data-aos-duration="2000"
+		class="flex flex-1 flex-col mt-32">
 		<section id="hero" class="mb-14 flex flex-col items-center md:flex-row">
 			<div
 				class="mr-4 flex flex-col items-center justify-center text-center md:items-start md:text-start gap-4">
