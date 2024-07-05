@@ -29,12 +29,14 @@ const setTab = (t: string) => {
 					software engineer with a passion for
 					<span class="font-semibold text-purple-400">
 						web development</span
+					>
+					while specialising in
+					<span class="font-semibold text-purple-400"> frontend</span
 					>.
 				</p>
 				<p class="font-light">
-					I'm proficient in JavaScript, TypeScript, PHP, Python and
-					modern web tools 💻. Currently my tech stack consists of
-					Nuxt / Vue, TailwindCSS & MongoDB.
+					My main tech stack consists of Nuxt / Vue, TailwindCSS &
+					MongoDB 💻. I'm currently also learning IOS development 📱
 				</p>
 				<div id="socials" class="mt-5 flex w-24 justify-between">
 					<a
