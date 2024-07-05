@@ -61,17 +61,25 @@ const setTab = (t: string) => {
 		</section>
 		<div
 			class="mb-6 flex border-b-2 border-gray-500 pb-2 text-lg dark:border-gray-50">
-			<div class="flex text-gray-700 dark:text-gray-400">
+			<div class="flex text-gray-700 dark:text-gray-400 relative gap-8">
 				<button
 					v-for="(tabItem, index) in tabs"
+					:id="tabItem"
 					:key="index"
-					class="mr-8 cursor-pointer rounded-xl p-2 transition-colors duration-300 hover:text-black dark:hover:text-white"
+					class="cursor-pointer z-10 rounded-xl p-2 transition-colors duration-300 hover:text-black dark:hover:text-white"
 					:class="tab === tabItem ? 'text-black dark:text-white' : ''"
 					@click="() => setTab(tabItem)">
 					<h3 class="font-montserrat tracking-widest capitalize">
 						{{ tabItem }}
 					</h3>
 				</button>
+				<div
+					class="absolute h-[44px] rounded-xl bg-gray-200 dark:bg-neutral-700 transition-all duration-300"
+					:class="
+						tab === 'portfolio'
+							? 'left-0 w-[108px]'
+							: 'left-[140px] w-[72px]'
+					" />
 			</div>
 		</div>
 		<section class="flex">

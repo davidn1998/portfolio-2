@@ -17,6 +17,7 @@
 		"@nuxt/image": "^1.7.0",
 		"@nuxtjs/google-fonts": "^3.2.0",
 		"@nuxtjs/tailwindcss": "^6.12.0",
+		"@vueuse/motion": "^2.2.3",
 		"nuxt": "^3.11.2",
 		"prettier": "^3.2.5",
 		"vue": "^3.4.27",
@@ -24,6 +25,10 @@
 		"vue3-lottie": "^3.3.0"
 	},
 	"devDependencies": {
+		"@iconify-json/dashicons": "^1.1.9",
+		"@iconify-json/mdi": "^1.1.67",
+		"@iconify-json/simple-icons": "^1.1.108",
+		"@iconify-json/uil": "^1.1.8",
 		"@nuxtjs/color-mode": "^3.4.2",
 		"husky": "^9.0.11",
 		"lint-staged": "^15.2.5",

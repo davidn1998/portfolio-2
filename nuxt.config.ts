@@ -8,6 +8,7 @@ export default defineNuxtConfig({
 		'@nuxtjs/color-mode',
 		'@nuxt/image',
 		'@nuxtjs/google-fonts',
+		'@vueuse/motion/nuxt',
 		'nuxt-icon',
 	],
 	colorMode: {
