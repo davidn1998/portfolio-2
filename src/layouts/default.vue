@@ -1,4 +1,12 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import 'aos/dist/aos.css';
+
+onMounted(() => {
+	import('aos').then(({ default: AOS }) => {
+		AOS.init();
+	});
+});
+</script>
 
 <template>
 	<div class="dark:bg-ink dark:text-white flex flex-col relative font-open">

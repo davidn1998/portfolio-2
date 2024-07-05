@@ -61,6 +61,8 @@ const projects = [
 			<ProjectCard
 				v-for="(project, index) in projects"
 				:key="index"
+				:data-aos="index % 2 === 0 ? 'fade-right' : 'fade-left'"
+				data-aos-duration="1000"
 				:name="project.name"
 				:description="project.description"
 				:github-link="project.githubURL"
