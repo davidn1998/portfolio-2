@@ -9,14 +9,17 @@ import workingDevAnim from '@/lotties/working-dev.json';
 			<client-only>
 				<Vue3Lottie :animation-data="workingDevAnim" />
 			</client-only>
-			<div class="w-full p-10 font-bold md:w-[50%] md:p-16 md:text-2xl">
-				<h1 class="mb-4 text-4xl dark:text-white">David Nwachukwu</h1>
+			<div class="w-full p-10 md:w-[50%] md:p-16 md:text-2xl">
+				<h1
+					class="mb-4 text-4xl dark:text-white font-montserrat tracking-widest">
+					David Nwachukwu
+				</h1>
 			</div>
 		</div>
 		<div class="group mt-16 flex h-24 w-24 items-center justify-center">
 			<NuxtLink
 				to="/home"
-				class="flex h-16 w-24 animate-bounce items-center justify-center rounded-3xl bg-purple-400 text-center font-bold text-black shadow-md shadow-purple-400 dark:text-white">
+				class="flex h-16 w-24 animate-bounce items-center justify-center rounded-3xl bg-purple-400 text-center tracking-widest text-black shadow-md shadow-purple-400 dark:text-white">
 				Enter
 			</NuxtLink>
 		</div>

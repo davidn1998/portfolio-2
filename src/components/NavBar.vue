@@ -18,7 +18,7 @@ const route = useRoute();
 		<Transition>
 			<ul
 				v-if="route.name != 'index'"
-				class="flex items-center justify-between gap-3 transition-all duration-200">
+				class="flex items-center justify-between gap-6 transition-all duration-200 font-montserrat tracking-widest">
 				<NavLink
 					v-for="link in navLinks"
 					:key="link.path"

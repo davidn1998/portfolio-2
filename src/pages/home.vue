@@ -1,6 +1,8 @@
 <script lang="ts" setup>
 import appDevAnim from '@/lotties/app-dev.json';
 
+const tabs = ['portfolio', 'skills'];
+
 const tab = ref('portfolio');
 
 const setTab = (t: string) => {
@@ -14,19 +16,23 @@ const setTab = (t: string) => {
 		<section id="hero" class="mb-14 flex flex-col items-center md:flex-row">
 			<div
 				class="mr-4 flex flex-col items-center justify-center text-center md:items-start md:text-start gap-4">
-				<h1 class="text-4xl font-bold mb-4">David Nwachukwu</h1>
-				<p>
+				<h1 class="text-4xl mb-4 font-montserrat tracking-widest">
+					David Nwachukwu
+				</h1>
+				<p class="font-light">
 					Hi ✌🏾, I'm a
-					<span class="font-bold text-purple-400">full stack</span>
+					<span class="font-semibold text-purple-400"
+						>full stack</span
+					>
 					software engineer with a passion for
-					<span class="font-bold text-purple-400">
+					<span class="font-semibold text-purple-400">
 						web development</span
 					>.
 				</p>
-				<p>
-					I'm proficient in Python, JavaScript, TypeScript and modern
-					web tools 💻. Currently my tech stack consists of NextJS,
-					TailwindCSS & MongoDB.
+				<p class="font-light">
+					I'm proficient in JavaScript, TypeScript, PHP, Python and
+					modern web tools 💻. Currently my tech stack consists of
+					Nuxt / Vue, TailwindCSS & MongoDB.
 				</p>
 				<div id="socials" class="mt-5 flex w-24 justify-between">
 					<a
@@ -54,23 +60,17 @@ const setTab = (t: string) => {
 			</div>
 		</section>
 		<div
-			class="mb-6 flex border-b-2 border-gray-500 pb-2 text-lg font-bold dark:border-gray-50">
+			class="mb-6 flex border-b-2 border-gray-500 pb-2 text-lg dark:border-gray-50">
 			<div class="flex text-gray-700 dark:text-gray-400">
 				<button
+					v-for="(tabItem, index) in tabs"
+					:key="index"
 					class="mr-8 cursor-pointer rounded-xl p-2 transition-colors duration-300 hover:text-black dark:hover:text-white"
-					:class="
-						tab === 'portfolio' ? 'text-black dark:text-white' : ''
-					"
-					@click="() => setTab('portfolio')">
-					<h3>Portfolio</h3>
-				</button>
-				<button
-					class="mr-8 cursor-pointer rounded-xl p-2 transition-colors duration-300 hover:text-black dark:hover:text-white"
-					:class="
-						tab === 'skills' ? 'text-black dark:text-white' : ''
-					"
-					@click="() => setTab('skills')">
-					<h3>Skills</h3>
+					:class="tab === tabItem ? 'text-black dark:text-white' : ''"
+					@click="() => setTab(tabItem)">
+					<h3 class="font-montserrat tracking-widest capitalize">
+						{{ tabItem }}
+					</h3>
 				</button>
 			</div>
 		</div>

@@ -1,7 +1,7 @@
 <script lang="ts" setup></script>
 
 <template>
-	<div class="dark:bg-ink dark:text-white flex flex-col relative">
+	<div class="dark:bg-ink dark:text-white flex flex-col relative font-open">
 		<header class="fixed w-screen flex justify-between items-center p-8">
 			<NavBar />
 			<ThemeToggler />

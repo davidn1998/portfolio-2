@@ -9,11 +9,11 @@ const projects = [
 		cleanURL: 'filmdek.com',
 		imgURL: '/img/project_thumbnails/filmdek_thumb.png',
 		techIcons: [
-			{ name: 'Next.js', icon: 'logos:nextjs-icon' },
-			{ name: 'Tailwind CSS', icon: 'logos:tailwindcss-icon' },
-			{ name: 'TypeScript', icon: 'logos:typescript-icon' },
-			{ name: 'Framer Motion', icon: 'logos:framer' },
-			{ name: 'Netlify', icon: 'logos:netlify-icon' },
+			{ name: 'Next.js', icon: 'simple-icons:nextdotjs' },
+			{ name: 'Tailwind CSS', icon: 'simple-icons:tailwindcss' },
+			{ name: 'TypeScript', icon: 'simple-icons:typescript' },
+			{ name: 'Framer Motion', icon: 'simple-icons:framer' },
+			{ name: 'Netlify', icon: 'simple-icons:netlify' },
 			{ name: 'TMDB API', icon: 'dashicons:rest-api' },
 		],
 	},
@@ -26,10 +26,10 @@ const projects = [
 		cleanURL: 'charcutify.netlify.app',
 		imgURL: '/img/project_thumbnails/charcutify_thumb.png',
 		techIcons: [
-			{ name: 'Next.js', icon: 'logos:nextjs-icon' },
-			{ name: 'Tailwind CSS', icon: 'logos:tailwindcss-icon' },
-			{ name: 'TypeScript', icon: 'logos:typescript-icon' },
-			{ name: 'Netlify', icon: 'logos:netlify-icon' },
+			{ name: 'Next.js', icon: 'simple-icons:nextdotjs' },
+			{ name: 'Tailwind CSS', icon: 'simple-icons:tailwindcss' },
+			{ name: 'TypeScript', icon: 'simple-icons:typescript' },
+			{ name: 'Netlify', icon: 'simple-icons:netlify' },
 		],
 	},
 	{
@@ -41,11 +41,11 @@ const projects = [
 		cleanURL: 'ludumlib.vercel.app',
 		imgURL: '/img/project_thumbnails/ludumlib_thumb.png',
 		techIcons: [
-			{ name: 'Next.js', icon: 'logos:nextjs-icon' },
-			{ name: 'SASS', icon: 'logos:sass' },
-			{ name: 'MongoDB', icon: 'logos:mongodb-icon' },
-			{ name: 'Firebase', icon: 'logos:firebase' },
-			{ name: 'Vercel', icon: 'logos:vercel-icon' },
+			{ name: 'Next.js', icon: 'simple-icons:nextdotjs' },
+			{ name: 'SASS', icon: 'simple-icons:sass' },
+			{ name: 'MongoDB', icon: 'simple-icons:mongodb' },
+			{ name: 'Firebase', icon: 'mdi:firebase' },
+			{ name: 'Vercel', icon: 'simple-icons:vercel' },
 			{ name: 'RAWG API', icon: 'dashicons:rest-api' },
 		],
 	},
@@ -54,7 +54,7 @@ const projects = [
 
 <template>
 	<div className="flex flex-1 flex-col">
-		<p className="mb-8 font-bold">
+		<p className="mb-4 font-montserrat tracking-wider">
 			Checkout some of my projects 📁 and concepts 🚀
 		</p>
 		<div className="flex flex-col">
@@ -68,7 +68,7 @@ const projects = [
 				:clean-link="project.cleanURL"
 				:img-link="project.imgURL"
 				:tech-icons="project.techIcons"
-				:reversed="index % 2 === 0" />
+				:reversed="index % 2 === 1" />
 		</div>
 	</div>
 </template>

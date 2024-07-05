@@ -6,6 +6,10 @@ export default {
 			colors: {
 				ink: '#121212',
 			},
+			fontFamily: {
+				open: ['Open Sans', 'sans-serif'],
+				montserrat: ['Montserrat', 'sans-serif'],
+			},
 		},
 	},
 	plugins: [],

@@ -37,10 +37,10 @@ const {
 		<div
 			class="absolute flex h-full flex-col justify-center p-8 lg:w-1/2 lg:p-0"
 			:class="reversed ? 'left-0 lg:text-left' : 'right-0 lg:text-right'">
-			<h3 class="text-xl font-bold">{{ name }}</h3>
+			<h3 class="text-xl font-montserrat tracking-widest">{{ name }}</h3>
 			<div
 				class="my-8 text-neutral-900 shadow-none dark:text-neutral-300 lg:bg-purple-800 lg:p-8 lg:text-white lg:shadow-2xl">
-				<p class="mb-8">{{ description }}</p>
+				<p class="mb-8 text-sm leading-5">{{ description }}</p>
 				<ul
 					class="flex text-2xl"
 					:class="reversed ? 'lg:justify-start' : 'lg:justify-end'">
@@ -74,7 +74,9 @@ const {
 					:href="websiteLink"
 					target="_blank"
 					rel="noreferrer">
-					<span class="mr-2">{{ cleanLink }}</span>
+					<span class="mr-2 font-montserrat tracking-wider text-sm">{{
+						cleanLink
+					}}</span>
 					<span
 						class="inline-block transition-transform duration-300 ease-linear group-hover:translate-x-1">
 						&rarr;
