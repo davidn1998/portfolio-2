@@ -27,6 +27,7 @@ const route = useRoute();
 			class="container mx-auto flex flex-col lg:max-w-5xl min-h-screen w-screen justify-center p-4">
 			<slot />
 		</main>
+		<TheFooter v-if="route.name !== 'index'" />
 	</div>
 </template>
 
