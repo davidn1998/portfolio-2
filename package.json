@@ -22,7 +22,9 @@
 		"vue3-lottie": "^3.3.0"
 	},
 	"devDependencies": {
+		"@nuxtjs/color-mode": "^3.4.2",
 		"husky": "^9.0.11",
-		"lint-staged": "^15.2.5"
+		"lint-staged": "^15.2.5",
+		"nuxt-icon": "^1.0.0-beta.7"
 	}
 }

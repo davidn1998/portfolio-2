@@ -2,5 +2,14 @@
 export default defineNuxtConfig({
 	devtools: { enabled: true },
 	srcDir: 'src',
-	modules: ['@nuxtjs/tailwindcss', '@nuxt/eslint'],
+	modules: [
+		'@nuxtjs/tailwindcss',
+		'@nuxt/eslint',
+		'@nuxtjs/color-mode',
+		'nuxt-icon',
+	],
+	colorMode: {
+		preference: 'dark',
+		classSuffix: '',
+	},
 });
