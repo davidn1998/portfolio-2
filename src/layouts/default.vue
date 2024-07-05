@@ -1,8 +1,8 @@
 <script lang="ts" setup></script>
 
 <template>
-	<div class="dark:bg-ink flex flex-col relative">
-		<header class="fixed w-screen flex justify-between items-center p-4">
+	<div class="dark:bg-ink dark:text-white flex flex-col relative">
+		<header class="fixed w-screen flex justify-between items-center p-8">
 			<NavBar />
 			<ThemeToggler />
 		</header>
