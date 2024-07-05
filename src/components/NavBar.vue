@@ -9,17 +9,34 @@ const navLinks: NavLink[] = [
 	{ label: 'contact', path: '/contact' },
 	{ label: 'resume', path: '/CV.pdf' },
 ];
+
+const route = useRoute();
 </script>
 
 <template>
 	<nav>
-		<ul
-			class="flex h-12 items-center justify-between dark:text-gray-300 gap-3">
-			<li v-for="link in navLinks" :key="link.path">
-				<NuxtLink :to="link.path">{{ link.label }}</NuxtLink>
-			</li>
-		</ul>
+		<Transition>
+			<ul
+				v-if="route.name != 'index'"
+				class="flex items-center justify-between gap-3 transition-all duration-200">
+				<NavLink
+					v-for="link in navLinks"
+					:key="link.path"
+					:link="link" />
+			</ul>
+		</Transition>
 	</nav>
 </template>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.v-enter-active,
+.v-leave-active {
+	transition: all 0.5s;
+}
+
+.v-enter-from,
+.v-leave-to {
+	transform: translateX(-150%);
+	opacity: 0;
+}
+</style>
