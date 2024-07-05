@@ -1,5 +1,16 @@
 <script lang="ts" setup>
 import floatingLaptopAnim from '@/lotties/floating-laptop.json';
+
+useHead({
+	title: 'Contact | David Nwachukwu',
+	meta: [
+		{
+			name: 'description',
+			content:
+				'Contact me for job opportunities or just to connect. LinkedIn, Email and Github.',
+		},
+	],
+});
 </script>
 
 <template>
