@@ -8,19 +8,22 @@ import workingDevAnim from '@/lotties/working-dev.json';
 		data-aos-duration="1000"
 		class="flex flex-col items-center justify-center mt-24">
 		<div
-			class="flex w-full flex-col-reverse items-center justify-between rounded-2xl bg-gray-50 shadow-lg dark:bg-neutral-800 dark:shadow-neutral-800 md:flex-row">
+			class="flex w-full gap-4 flex-col-reverse items-stretch justify-between rounded-2xl bg-gray-50 shadow-lg dark:bg-neutral-800 dark:shadow-neutral-800 md:flex-row">
 			<client-only>
-				<Vue3Lottie :animation-data="workingDevAnim" />
+				<div class="md:w-1/2">
+					<Vue3Lottie :animation-data="workingDevAnim" />
+				</div>
 			</client-only>
-			<div class="w-full p-10 md:w-[50%] md:p-16 md:text-2xl">
+			<div
+				class="flex flex-col flex-1 w-full p-4 py-10 md:p-10 md:text-2xl">
 				<h1
 					class="text-4xl dark:text-white font-montserrat tracking-widest">
 					David Nwachukwu
 				</h1>
 				<div class="h-0.5 bg-ink dark:bg-white my-4" />
-				<h2 class="font-montserrat tracking-widest uppercase text-sm">
-					Portfolio
-				</h2>
+				<ClientOnly>
+					<CodeAnim />
+				</ClientOnly>
 			</div>
 		</div>
 		<div class="group mt-16 flex h-24 w-24 items-center justify-center">
