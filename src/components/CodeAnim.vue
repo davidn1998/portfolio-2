@@ -38,7 +38,8 @@ const typeEffect1 = () => {
 typeEffect1();
 </script>
 <template>
-	<code class="typingEffect text-xs md:text-sm flex flex-col">
+	<code
+		class="typingEffect text-xs md:text-sm flex flex-col bg-ink rounded-md shadow-md shadow-black">
 		<div v-highlightjs="typeLine1">
 			<code class="typingEffect__line1 javascript" />
 		</div>
