@@ -21,7 +21,9 @@ const route = useRoute();
 					: 'bg-gray-100 dark:bg-black '
 			">
 			<NavBar />
-			<ThemeToggler />
+			<ClientOnly>
+				<ThemeToggler />
+			</ClientOnly>
 		</header>
 		<main
 			class="container mx-auto flex flex-col lg:max-w-5xl min-h-screen w-screen justify-center p-4">
