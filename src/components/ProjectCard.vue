@@ -46,13 +46,12 @@ const {
 				class="my-8 text-neutral-900 shadow-none dark:text-neutral-300 lg:bg-purple-800 lg:p-8 lg:text-white lg:shadow-2xl">
 				<p class="mb-8 text-sm leading-5">{{ description }}</p>
 				<ul
-					class="flex text-2xl"
+					class="flex text-2xl flex-wrap gap-4 lg:gap-8"
 					:class="reversed ? 'lg:justify-start' : 'lg:justify-end'">
 					<li
 						v-for="(icon, index) in techIcons"
 						:key="index"
-						class="group relative cursor-pointer"
-						:class="index === 0 ? 'ml-0' : 'ml-8'">
+						class="group relative cursor-pointer">
 						<Icon :name="icon.icon" />
 						<span
 							class="absolute left-1/2 top-8 w-auto min-w-max origin-top -translate-x-1/2 scale-0 rounded-md bg-gray-900 p-2 text-xs font-bold text-white shadow-md transition-all duration-300 group-hover:scale-100">
@@ -65,6 +64,7 @@ const {
 				class="flex items-center"
 				:class="reversed ? 'lg:justify-start' : 'lg:justify-end'">
 				<a
+					v-if="githubLink"
 					:href="githubLink"
 					target="_blank"
 					rel="noreferrer"
