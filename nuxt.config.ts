@@ -21,4 +21,17 @@ export default defineNuxtConfig({
 		},
 		display: 'swap',
 	},
+	postcss: {
+		plugins: {
+			cssnano:
+				process.env.NODE_ENV === 'production'
+					? {
+							preset: [
+								'default',
+								{ discardComments: { removeAll: true } },
+							],
+						}
+					: false, // disable cssnano when not in production
+		},
+	},
 });
