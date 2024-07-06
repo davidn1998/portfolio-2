@@ -39,7 +39,7 @@ typeEffect1();
 </script>
 <template>
 	<code
-		class="typingEffect text-xs md:text-sm flex flex-col bg-ink rounded-md shadow-md shadow-black">
+		class="typingEffect text-xs md:text-sm flex flex-col bg-white rounded-md shadow-md">
 		<div v-highlightjs="typeLine1">
 			<code class="typingEffect__line1 javascript" />
 		</div>
