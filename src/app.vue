@@ -15,6 +15,9 @@ useHead({
 			href: '/favicon.ico',
 		},
 	],
+	htmlAttrs: {
+		lang: 'en',
+	},
 });
 </script>
 
