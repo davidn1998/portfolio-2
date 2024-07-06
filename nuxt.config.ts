@@ -9,7 +9,7 @@ export default defineNuxtConfig({
 		'@nuxt/image',
 		'@nuxtjs/google-fonts',
 		'@nuxtjs/robots',
-		'nuxt-icon',
+		'@nuxt/icon',
 	],
 	colorMode: {
 		preference: 'dark',
