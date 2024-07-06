@@ -87,10 +87,8 @@ const setTab = (t: string) => {
 					" />
 			</div>
 		</div>
-		<section class="flex">
-			<PortfolioSection v-if="tab === 'portfolio'" />
-			<SkillsSection v-else-if="tab === 'skills'" />
-		</section>
+		<PortfolioSection v-if="tab === 'portfolio'" />
+		<SkillsSection v-else-if="tab === 'skills'" />
 	</div>
 </template>
 

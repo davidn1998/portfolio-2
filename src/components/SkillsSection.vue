@@ -85,13 +85,23 @@ const skills = [
 		url: 'https://www.php.net/',
 		icon: 'simple-icons:php',
 	},
+	{
+		name: 'Docker',
+		url: 'https://www.docker.com/',
+		icon: 'simple-icons:docker',
+	},
+	{
+		name: 'AWS',
+		url: 'https://aws.amazon.com/',
+		icon: 'simple-icons:amazonaws',
+	},
 ];
 </script>
 
 <template>
-	<div class="flex w-full flex-wrap justify-center items-center">
+	<section class="flex w-full flex-wrap justify-center items-center">
 		<SkillIcon v-for="skill in skills" :key="skill.name" v-bind="skill" />
-	</div>
+	</section>
 </template>
 
 <style lang="scss" scoped></style>

@@ -22,13 +22,13 @@ const {
 
 <template>
 	<div
-		class="relative mb-20 mt-10 flex"
+		class="relative flex"
 		:class="reversed ? 'flex-row-reverse' : 'flex-row'">
 		<a
 			:href="websiteLink"
 			target="_blank"
 			rel="noreferrer"
-			class="relative min-h-[400px] w-full lg:w-2/3 flex">
+			class="absolute h-full lg:relative w-full lg:w-2/3 flex">
 			<NuxtImg
 				:src="imgLink"
 				alt="project"
@@ -39,14 +39,14 @@ const {
 				class="object-cover w-full h-full opacity-10 shadow-xl grayscale filter transition-all duration-300 lg:opacity-100 lg:hover:filter-none" />
 		</a>
 		<div
-			class="absolute flex h-full flex-col justify-center p-8 lg:w-1/2 lg:p-0"
+			class="lg:absolute flex flex-col justify-center p-8 lg:w-1/2 lg:p-0"
 			:class="reversed ? 'left-0 lg:text-left' : 'right-0 lg:text-right'">
 			<h3 class="text-xl font-montserrat tracking-widest">{{ name }}</h3>
 			<div
 				class="my-8 text-neutral-900 shadow-none dark:text-neutral-300 lg:bg-purple-800 lg:p-8 lg:text-white lg:shadow-2xl">
 				<p class="mb-8 text-sm leading-5">{{ description }}</p>
 				<ul
-					class="flex text-2xl flex-wrap gap-4 lg:gap-8"
+					class="flex text-2xl flex-wrap gap-4 lg:gap-8 mb-2"
 					:class="reversed ? 'lg:justify-start' : 'lg:justify-end'">
 					<li
 						v-for="(icon, index) in techIcons"

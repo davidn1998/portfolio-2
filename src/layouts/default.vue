@@ -26,7 +26,7 @@ const route = useRoute();
 			</ClientOnly>
 		</header>
 		<main
-			class="container mx-auto flex flex-col lg:max-w-5xl min-h-screen w-screen justify-center p-4">
+			class="container mx-auto flex flex-col lg:max-w-5xl min-h-screen justify-center p-4">
 			<slot />
 		</main>
 		<TheFooter v-if="route.name !== 'index'" />

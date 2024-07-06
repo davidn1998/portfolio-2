@@ -14,6 +14,8 @@ const buttonLabel = computed(() => {
 
 <template>
 	<button
+		data-aos="fade-left"
+		data-aos-duration="1000"
 		class="flex justify-center items-center cursor-pointer rounded-xl border-2 border-transparent bg-neutral-300 p-2 text-lg transition-all duration-100 ease-linear hover:border-neutral-400 dark:bg-neutral-600 dark:text-white"
 		:aria-label="buttonLabel"
 		@click="toggleTheme">

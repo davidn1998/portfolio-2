@@ -99,11 +99,11 @@ const projects = [
 </script>
 
 <template>
-	<div className="flex flex-1 flex-col w-full">
-		<p className="mb-4 font-montserrat tracking-wider">
+	<section class="flex flex-col gap-8 w-full mb-10">
+		<p class="mb-4 font-montserrat tracking-wider">
 			Checkout some of my projects 📁 and concepts 🚀
 		</p>
-		<div className="flex flex-col">
+		<div class="flex flex-col gap-20">
 			<ProjectCard
 				v-for="(project, index) in projects"
 				:key="index"
@@ -119,7 +119,7 @@ const projects = [
 				:tech-icons="project.techIcons"
 				:reversed="index % 2 === 1" />
 		</div>
-	</div>
+	</section>
 </template>
 
 <style lang="scss" scoped></style>
