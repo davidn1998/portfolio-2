@@ -8,7 +8,7 @@ import workingDevAnim from '@/lotties/working-dev.json';
 		data-aos-duration="1000"
 		class="flex flex-col items-center justify-center mt-24">
 		<div
-			class="flex w-full gap-4 flex-col-reverse items-stretch justify-between rounded-2xl bg-gray-50 shadow-lg dark:bg-neutral-800 dark:shadow-neutral-800 md:flex-row">
+			class="flex w-full gap-4 flex-col-reverse items-stretch justify-between rounded-2xl bg-gray-50 shadow-lg dark:bg-neutral-800 dark:shadow-black md:flex-row">
 			<client-only>
 				<div class="md:w-1/2">
 					<Vue3Lottie :animation-data="workingDevAnim" />
@@ -29,7 +29,7 @@ import workingDevAnim from '@/lotties/working-dev.json';
 		<div class="group mt-16 flex h-24 w-24 items-center justify-center">
 			<NuxtLink
 				to="/home"
-				class="flex h-16 w-24 animate-bounce items-center justify-center rounded-3xl bg-purple-400 text-center tracking-widest text-black shadow-md shadow-purple-400 dark:text-white">
+				class="flex h-16 w-24 animate-bounce items-center justify-center rounded-3xl bg-purple-800 text-center tracking-widest shadow-md dark:shadow-black text-white">
 				Enter
 			</NuxtLink>
 		</div>
