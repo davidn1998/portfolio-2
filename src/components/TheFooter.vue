@@ -9,7 +9,9 @@
 				src="img/portfolio_logo.png"
 				alt="headphones"
 				width="32"
-				height="32" />
+				height="32"
+				format="webp"
+				quality="80" />
 		</NuxtLink>
 	</footer>
 </template>

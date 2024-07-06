@@ -32,6 +32,10 @@ const {
 			<NuxtImg
 				:src="imgLink"
 				alt="project"
+				width="662"
+				height="415"
+				format="webp"
+				quality="80"
 				class="object-cover w-full h-full opacity-10 shadow-xl grayscale filter transition-all duration-300 lg:opacity-100 lg:hover:filter-none" />
 		</a>
 		<div
