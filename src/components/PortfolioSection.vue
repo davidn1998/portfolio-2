@@ -1,6 +1,37 @@
 <script lang="ts" setup>
 const projects = [
 	{
+		name: 'Thriva',
+		description:
+			'Marketing website for Thriva, an at-home blood testing service. Built with Nuxt.js, Tailwind CSS and Prismic for managing content.',
+		githubURL: '',
+		websiteURL: 'https://thriva.co/',
+		cleanURL: 'thriva.co',
+		imgURL: '/img/project_thumbnails/thriva_thumb.png',
+		techIcons: [
+			{
+				name: 'Nuxt.js',
+				icon: 'simple-icons:nuxtdotjs',
+			},
+			{
+				name: 'Tailwind CSS',
+				icon: 'simple-icons:tailwindcss',
+			},
+			{
+				name: 'TypeScript',
+				icon: 'simple-icons:typescript',
+			},
+			{
+				name: 'Prismic',
+				icon: 'simple-icons:prismic',
+			},
+			{
+				name: 'Storybook',
+				icon: 'simple-icons:storybook',
+			},
+		],
+	},
+	{
 		name: 'Toru Digital',
 		description:
 			'Company website for Toru Digital, a digital solutions agency. Built with Nuxt.js, Tailwind CSS and Strapi CMS for content management of case studies and blog content. Also utilises GSAP to create complex animations. Ifrastructure on AWS with Strapi hosted through docker on AWS Fargate and the frontend hosted serverlessly on AWS Amplify.',

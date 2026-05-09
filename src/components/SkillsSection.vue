@@ -95,6 +95,16 @@ const skills = [
 		url: 'https://aws.amazon.com/',
 		icon: 'simple-icons:amazonaws',
 	},
+	{
+		name: 'Prismic',
+		url: 'https://prismic.io/',
+		icon: 'simple-icons:prismic',
+	},
+	{
+		name: 'Storybook',
+		url: 'https://storybook.js.org/',
+		icon: 'simple-icons:storybook',
+	},
 ];
 </script>
 
